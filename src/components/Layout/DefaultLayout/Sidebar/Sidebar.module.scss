@@ -1,0 +1,22 @@
+.sidebar-wrapper {
+  width: 285px;
+  min-height: 900px;
+  background-color: yellow;
+  transition: transform 0.5s ease;
+  z-index: 2;
+
+  @media (max-width: 576px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.hidden {
+  transform: translateX(-100%);
+
+  @media (max-width: 576px) {
+    transform: translateX(-285px);
+  }
+}

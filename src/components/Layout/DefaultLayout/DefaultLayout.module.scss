@@ -1,0 +1,46 @@
+.default-layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.default-layout-container {
+  width: 100%;
+  display: flex;
+  min-height: 100px;
+  position: relative;
+
+  @media (max-width: 576px) {
+    overflow: hidden;
+  }
+}
+
+.sidebar-hidden {
+  margin-left: -285px;
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+  }
+}
+
+.sidebar-visible {
+  margin-left: 0;
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+  }
+}
+
+.default-layout-content {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: margin-left 0.5s ease;
+
+  @media (max-width: 576px) {
+    transition: none;
+    margin-left: 0;
+  }
+}
